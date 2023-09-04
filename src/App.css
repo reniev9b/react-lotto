@@ -21,6 +21,31 @@ body {
 	margin: 0;
 }
 
+h3 {
+	margin: 0;
+	font-size: 24px;
+	letter-spacing: -0.6px;
+	color: #333;
+	margin-bottom: 12px;
+}
+
+h4 {
+	font-size: 18px;
+	letter-spacing: -0.2px;
+	margin: 20px 0 10px;
+	color: #333;
+}
+
+h5 {
+	font-size: 14px;
+	letter-spacing: -0.2px;
+}
+
+h6 {
+	font-size: 12px;
+	letter-spacing: -0.2px;
+}
+
 section {
 	padding: 20px;
 	border-radius: 16px;
@@ -45,31 +70,6 @@ section:not(:first-child) {
 	width: 80vw;
 	min-width: 330px;
 	text-align: center;
-}
-
-h3 {
-	margin: 0;
-	font-size: 24px;
-	letter-spacing: -0.6px;
-	color: #333;
-	margin-bottom: 12px;
-}
-
-h4 {
-	font-size: 18px;
-	letter-spacing: -0.2px;
-	margin: 20px 0 10px;
-	color: #333;
-}
-
-h5 {
-	font-size: 14px;
-	letter-spacing: -0.2px;
-}
-
-h6 {
-	font-size: 12px;
-	letter-spacing: -0.2px;
 }
 
 .numbers {
@@ -101,7 +101,8 @@ h6 {
 }
 
 .button-group button,
-.button-group a {
+.button-group a,
+.share-button-container button {
 	padding: 10px 20px;
 	font-size: 16px;
 	border-radius: 8px;
@@ -137,5 +138,14 @@ h6 {
 	gap: 8px;
 }
 
-.share-button {
+.share-button-container {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+.share-button-container button {
+	background-color: #fee500;
+	color: #191919;
+	border: none;
 }
