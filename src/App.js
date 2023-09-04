@@ -1,11 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import KakaoShareButton from "./component/KakaoShareButton";
-
-// 버튼 컴포넌트
-function Button({ onClick, text }) {
-	return <button onClick={onClick}>{text}</button>;
-}
+import Button from "./component/Button";
 
 function App() {
 	const [lottoNumbers, setLottoNumbers] = useState([]);

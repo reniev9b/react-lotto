@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "../App.css";
+import Button from "./Button";
 const { Kakao } = window;
 
 export default function KakaoShareButton({ now }) {
@@ -16,7 +17,7 @@ export default function KakaoShareButton({ now }) {
 			objectType: "feed",
 			content: {
 				title: "복권 번호 추출",
-				description: `${now} 로또, 연금복권 번호 받아가세요`,
+				description: `${now} 로또, 연금복권 번호 받아가세요.`,
 				imageUrl:
 					"https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg", // url + data.image
 				link: {
@@ -26,7 +27,7 @@ export default function KakaoShareButton({ now }) {
 			},
 			buttons: [
 				{
-					title: "나도 복권 번호 추출하기",
+					title: "복권 번호 추출하기",
 					link: {
 						mobileWebUrl: resultUrl, // 결과페이지
 						webUrl: resultUrl,
@@ -36,13 +37,13 @@ export default function KakaoShareButton({ now }) {
 		});
 	};
 	return (
-		<button
-			className="share-button"
-			onClick={() => {
-				shareKakao();
-			}}
-		>
-			카톡 공유
-		</button>
+		<div class="share-button-container">
+			<Button
+				text="카톡 공유"
+				onClick={() => {
+					shareKakao();
+				}}
+			/>
+		</div>
 	);
 }
