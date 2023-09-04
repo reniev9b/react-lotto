@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "San Francisco";
+	src: local("San Francisco"),
+		url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff")
+			format("woff");
+}
+
+* {
+	font-family: "San Francisco", sans-serif;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 18px;
+	letter-spacing: -0.8px;
+}
+
+body {
+	margin: 0;
+}
+
+section {
+	padding: 20px;
+	border-radius: 16px;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section:not(:first-child) {
+	margin-top: 30px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 80px 0;
+	background-color: #f8f8f8;
+}
+
+.lotto {
+	width: 80vw;
+	min-width: 330px;
+	text-align: center;
+}
+
+h3 {
+	margin: 0;
+	font-size: 24px;
+	letter-spacing: -0.6px;
+	color: #333;
+	margin-bottom: 12px;
+}
+
+h4 {
+	font-size: 18px;
+	letter-spacing: -0.2px;
+	margin: 20px 0 10px;
+	color: #333;
+}
+
+h5 {
+	font-size: 14px;
+	letter-spacing: -0.2px;
+}
+
+h6 {
+	font-size: 12px;
+	letter-spacing: -0.2px;
+}
+
+.numbers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.eachnum {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 4px;
+	background-color: #5ded40;
+	color: #ffffff;
+	font-size: 22px;
+	font-weight: bold;
+	border-radius: 50%;
+}
+
+/* 버튼 관련 */
+.button-group {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+	gap: 10px;
+}
+
+.button-group button,
+.button-group a {
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button-group button {
+	background-color: #007bff;
+	color: #ffffff;
+	border: none;
+}
+
+.button-group a {
+	background-color: transparent;
+	color: #5ded40;
+	text-decoration: none;
+}
+
+.button-group button:hover {
+	background-color: #0056b3;
+}
+
+.button-group a:hover {
+	color: white;
+	background-color: #5ded40;
+}
+
+.pension-group {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+}
+
+.share-button {
+}
