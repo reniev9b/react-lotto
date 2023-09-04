@@ -3,7 +3,7 @@ import "../App.css";
 const { Kakao } = window;
 
 export default function KakaoShareButton({ now }) {
-	const url = "https://lotto.netlify.app/";
+	// const url = "https://lotto.netlify.app/";
 	const resultUrl = window.location.href;
 
 	useEffect(() => {
